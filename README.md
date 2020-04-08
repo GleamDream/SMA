@@ -9,20 +9,22 @@ length : 平均をとる長さ(int)
 
 returns : 単純移動平均をとった配列(ndarray)
 
-'''python:sample
+~~~python:sample
 from ma import moving_average
 
 x = [i for i in range(49)]
 mv = moving_average(mv, 7)
 print(mv)
-'''
+~~~
 
 # Features
 通常，numpyのconvolveで移動平均をとるときは，
-'''python:by numpy
+
+~~~python:by numpy
 ave_array = numpy.ones(length) / float(length)
 conv_x = numpy.convolve(x, ave_array)
-'''
+~~~
+
 とし，畳み込まれる配列xとnumpy.ones/lengthの畳み込みとなる。
 しかし，numpy.convolveで指定できるmode(初期値'full', 'valid', 'same')のどれをとっても
 xだけで(ゼロパディングせずに)平均をとったものは無い。
