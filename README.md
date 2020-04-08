@@ -3,8 +3,8 @@ Simple Moving Average by numpy.convolve and recursion
 単純移動平均(Simple Moving Average)を算出する
 
 # DEMO|Usage
-関数moving_average(x, length)
-x : 配列(listでもndarrayでも動作確認済み)
+関数moving_average(x, length)  
+x : 配列(listでもndarrayでも動作確認済み)  
 length : 平均をとる長さ(int)
 
 returns : 単純移動平均をとった配列(ndarray)
@@ -27,7 +27,7 @@ conv_x = numpy.convolve(x, ave_array)
 
 とし，畳み込まれる配列xとnumpy.ones/lengthの畳み込みとなる。
 しかし，numpy.convolveで指定できるmode(初期値'full', 'valid', 'same')のどれをとっても
-xだけで(ゼロパディングせずに)平均をとったものは無い。
+xだけで(ゼロパディングせずに)平均をとったものは無い。  
 mode=full(デフォルト)の場合，xからはみ出して畳み込みを行う範囲においてゼロパディングして平均をとる。
 そのため，返ってくる配列の長さは平均をとる長さ分だけ長くなって返ってくる。
 それに対してmode=sameであれば長くなった部分はカットされて返ってくるし，
