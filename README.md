@@ -53,8 +53,8 @@ mode = valid : 64 - 8 = 56
 
 # Author
 * 作成者 : Hiromu Ikemura
-* 所属 : N.I.T., Okinawa College
-* E-mail : ac194601(at)edu.okinawa-ct.ac.jp
+* 所属 : Japa Advanced Institute of Science and Technology
+* E-mail : s2150001(at)jaist.ac.jp
 
 # License
-"SMA" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License)
+This program is protected by the [MIT license](https://en.wikipedia.org/wiki/MIT_License)
